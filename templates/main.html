@@ -1,6 +1,10 @@
 {% extends "base.html" %}
 
 {% block content %}
-    <h1>Welcome {{ current_user.username }}!</h1>
-    <p>This is the main page of our application.</p>
+    <div class="card">
+        <div class="card-body">
+            <h1 class="card-title">Welcome {{ current_user.username }}!</h1>
+            <p class="card-text">This is the main page of our application.</p>
+        </div>
+    </div>
 {% endblock %}
